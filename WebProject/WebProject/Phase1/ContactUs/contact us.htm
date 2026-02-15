@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="../Navbar/navStyle.css">
+
+    <style>
+        span {
+            color: red;
+            font-size: small;
+            text-align: left;
+        }
+
+
+        fieldset {
+
+            text-decoration: solid;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 15px;
+            padding: 25px;
+        }
+
+        .nav-link {
+            color: rgb(251, 220, 218);
+            text-align: center;
+            font-weight: 600;
+
+        }
+
+
+
+        .col {
+
+
+            text-align: left;
+
+            padding: 15px;
+        }
+
+
+
+        .moveRight {
+            width: 90%;
+            padding: 10%;
+        }
+    </style>
+</head>
+
+<body style="background-color: white;">
+
+
+
+
+    <!--
+
+    <nav>
+
+        <strong>Learn</strong>
+
+
+        <a href="../Home/home.html">Home</a>
+        <a href="../SuccessStories/stories.html">Success Stories</a>
+
+
+        <a href="../learning/learning.html">Learning Hub</a>
+        <a href="../selfAssisment/selfassist.html">Self Self-Assessment &amp; Growth Tools</a>
+        <a href="../WorkshopEvents/workshop and events copy2.htm">Workshop &amp;
+            Events</a>
+        <a href="../AboutUs/About.html">About us</a>
+        <a id="selected" href="../ContactUs/contact us.htm">Contact us</a>
+        <a href="../../Phase2/recommendations.html">Get Advised</a>
+
+
+    </nav>
+-->
+
+
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <strong style="font-size: 30px; color: rgb(251, 233, 209); " class="navbar-brand">Learn</strong>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Home/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../SuccessStories/stories.html">Success Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../learning/learning.html">Learning Hub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../selfAssisment/selfassist.html">Self Self-Assessment &amp; Growth
+                        Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../WorkshopEvents/workshop and events copy2.htm">Workshop
+                        &amp;
+                        Events</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../AboutUs/About.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="selected" href="../ContactUs/contact us.htm">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../Phase2/recommendations.html">Get Advised</a>
+
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <h2 id="title">Contact the developers</h2>
+
+
+    <div class="container-fluid" style="margin: 0px;">
+        <div class="row">
+
+            <div class="col">
+                <div class="div2">
+
+
+
+                    <form action="">
+
+                        <fieldset>
+                            <legend>Personal Information</legend>
+
+                            <!-- writing boxes -->
+                            <label for="d1">Name:&nbsp;</label>
+                            <span id="NameE"></span>
+                            <input type="text" id="fname" placeholder="Enter your name" />
+
+
+
+
+
+                        </fieldset>
+                        <!-- user contact info -->
+                        <fieldset>
+                            <legend>Email</legend>
+                            <span id="EmailE"></span>
+                            <input id="email" type="email" placeholder="Enter your Email: ">
+                        </fieldset>
+                        <!-- rating us -->
+                        <fieldset>
+                            <legend>Rate us</legend>
+                            <sup>(optional)</sup>
+                            <br>
+                            <input type="radio" name="rate" id="r1"><label class="rating" for="r1">Excellent</label>
+                            <br>
+                            <input type="radio" name="rate" id="r2"><label class="rating" for="r2">VeryGood</label><br>
+                            <input type="radio" name="rate" id="r3"><label class="rating" for="r3">Good</label><br>
+                            <input type="radio" name="rate" id="r4"><label class="rating" for="r4">Need More
+                                Improvements</label>
+                            <br><br>
+                            <label for="feedback">Feedback: </label>
+                            <textarea name="" id="feedback" cols="10" rows="3"> Enter your feedback here </textarea>
+                        </fieldset>
+
+
+
+                    </form>
+                    <Fieldset>
+                        <Legend>Submit your Answers</Legend>
+
+                        <input class="btn" type="reset" onclick="clr() " value="Clear">
+                        <input class="btn" type="submit" onclick="validate()" value="Submit">
+
+
+
+                    </Fieldset>
+
+
+                </div>
+
+            </div>
+
+            <!-- <img src="contact-us-button-web-banner-templates-illustration-free-vector.jpg" alt="logo" width="600px"> -->
+
+
+
+            <div class="col">
+                <div class="moveRight">
+                    <h2>Location</h2>
+                    <p style="font-style: italic;">
+
+                        Jordan , Amman
+                        <br>
+                        ASU
+                        <br>
+                        Information Tecnology Faculty
+
+                    </p>
+                    <h2>Call us on</h2>
+                    <p>
+                        Personal: +962 790550825
+                        <br>
+                        University: (06) 560 9999
+                    </p>
+                    <h2>Socials</h2>
+                    <p>Twitter: @Learn</p>
+                    <p>Instagram: @learn.rsr</p>
+                    <h2>Email us </h2>
+
+                    <p>
+                        <a href="mailto:202411989@students.asu.edu.jo">Email us</a>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="contactus.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
