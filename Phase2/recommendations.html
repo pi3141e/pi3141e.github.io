@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Phase1/Navbar/navStyle.css">
+
+    <style>
+        .nav-link {
+            color: rgb(251, 220, 218);
+            text-align: center;
+            font-weight: 600;
+
+        }
+
+
+
+        .qBox {
+            background-color: rgba(242, 206, 194, 0.839);
+            border-radius: 5px;
+            margin: 5px 0px 5px 0px;
+            padding: 25px;
+
+        }
+
+        .qBox label {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 600;
+            padding: 5px;
+            font-size: 20px;
+
+        }
+
+        body {
+            background-color: rgb(248, 248, 243);
+
+        }
+
+        #Date_time {
+            background-color: rgb(244, 235, 228);
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 500;
+            color: #650404;
+            padding: 25px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        input,
+        textarea,
+        select {
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn {
+            border: none;
+            color: #f4eede;
+            background-color: rgba(139, 0, 0, 0.867);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 20px;
+
+            text-decoration: none;
+        }
+
+        span {
+            color: red;
+        }
+
+        #report {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 600;
+            color: #180000;
+            padding: 25px;
+        }
+
+        .btn:hover {
+            background-color: #6a0202;
+            color: #f4eede;
+
+        }
+
+        .btn:active {
+            background-color: #ae0606;
+            color: #f4eede;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!--
+    <div>
+        <nav class="container-fluid">
+            <div class="row">
+                <strong class="col-2">Learn</strong>
+
+                <a class="col" href="../Phase1/Home/home.html">Home</a>
+                <a class="col" href="../Phase1/SuccessStories/stories.html">Success Stories</a>
+
+
+                <a class="col" href="../Phase1/learning/learning.html">Learning Hub</a>
+                <a class="col-2" href="../Phase1/selfAssisment/selfassist.html">Self Self-Assessment &amp; Growth
+                    Tools</a>
+                <a class="col" href="../Phase1/WorkshopEvents/workshop and events copy2.htm">Workshop &amp;
+                    Events</a>
+                <a class="col" href="../Phase1/AboutUs/About.html">About us</a>
+                <a class="col" href="../Phase1/ContactUs/contact us.htm">Contact us</a>
+                <a id="selected" class="col" href="#">Get Advised</a>
+
+            </div>
+        </nav>
+    </div>
+
+    -->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <strong style="font-size: 30px; color: rgb(251, 233, 209); " class="navbar-brand">Learn</strong>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Phase1/SuccessStories/stories.html">Success Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Phase1/learning/learning.html">Learning Hub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Phase1/selfAssisment/selfassist.html">Self Self-Assessment &amp;
+                        Growth
+                        Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Phase1/WorkshopEvents/workshop and events copy2.htm">Workshop &amp;
+                        Events</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../Phase1/AboutUs/About.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Phase1/ContactUs/contact us.htm">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a id="selected" class="nav-link" href="#">Get Advised</a>
+
+                </li>
+
+            </ul>
+        </div>
+
+        </div>
+    </nav>
+
+
+
+
+    <div>
+        <p id="Date_time"></p>
+
+    </div>
+
+
+
+
+
+    <form action="">
+
+        <div class="container-sm">
+            <div class="row">
+                <div class="qBox" class="col">
+                    <label for="">Do you get along with your coworkers?</label>
+                    <br>
+                    <input type="radio" value="yes" name="q1" id="q1_yes"><label for="q1_yes">Yes</label><br>
+                    <input type="radio" value="no" name="q1" id="q1_no"><label for="q1_no">No</label><br>
+                    <span id="q1_error"></span>
+                </div>
+            </div>
+
+
+
+
+            <div class="row">
+                <div class="qBox" class="col">
+                    <label for="">How often do you argue with your manager?</label><br>
+                    <select style="width: 40%; padding: 10px;" name="" id="q2">
+                        <option value="none">-Select-</option>
+                        <option value="never">Never</option>
+                        <option value="rarely">Rarely</option>
+                        <option value="frequently">Frequently</option>
+                    </select>
+                    <br>
+                    <span id="q2_error"></span>
+                </div>
+            </div>
+
+
+
+
+            <div class="row">
+                <div class="qBox" class="col">
+                    <label for="">How many days per week do you feel stressed in?</label> <br>
+                    <input style="width: 40%; padding: 10px;" type="number" name="" id="q3"><br>
+                    <span id="q3_error"></span>
+
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="qBox" class="col">
+                    <label for="">How do you deal with stressful situations?</label><br>
+                    <input type="checkbox" name="" id="q4_op1"><label for="q4_op1">With wisdom</label><br>
+                    <input type="checkbox" name="" id="q4_op2"><label for="q4_op2">Ask a colleague for
+                        advice</label><br>
+                    <input type="checkbox" name="" id="q4_op3"><label for="q4_op3">Panic and Cry</label><br>
+                    <input type="checkbox" name="" id="q4_op4"><label for="q4_op4">Yell at everyone</label><br>
+                    <span id="q4_error"></span>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="row">
+                <div class="qBox" class="col">
+                    <label for="">on a scale from 0-10 how happy are you?</label><br>
+                    <input style="width: 40%; padding: 10px;" type="number" name="" id="q5">
+                    <br>
+                    <span id="q5_error"></span>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+            <div class="row">
+                <div class="qBox">
+                    <label for="">Yell in this box:</label><br>
+                    <textarea style="width: 40%;padding: 10px;" name="" id="q6"></textarea>
+                    <br>
+                    <span id="q6_error"></span>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </form>
+
+    <br>
+    <div class="container-sm">
+        <div class="row">
+            <div style="text-align: center;" class="col">
+                <button onclick="validateInput(); Analyse();" class="btn">Analyse data</button>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12" style="text-align: center;">
+                <textarea style="width: 100%;" name="" id="report"></textarea>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+    <script>
+
+        function validateInput() {
+            document.getElementById('q1_error').innerHTML = '';
+            document.getElementById('q2_error').innerHTML = '';
+            document.getElementById('q3_error').innerHTML = '';
+            document.getElementById('q4_error').innerHTML = '';
+            document.getElementById('q5_error').innerHTML = '';
+            document.getElementById('q6_error').innerHTML = '';
+
+            let allIsValid = true;
+
+            if ((!document.getElementById('q1_yes').checked && !document.getElementById('q1_no').checked)) {
+                document.getElementById('q1_error').innerHTML = 'Please select an option';
+                console.log('huh')
+                allIsValid = false;
+            }
+
+            if (document.getElementById('q2').value == 'none') {
+                document.getElementById('q2_error').innerHTML = 'Please select an option';
+                allIsValid = false;
+            }
+
+            if (document.getElementById('q3').value == '') {
+                document.getElementById('q3_error').innerHTML = 'Please enter a number';
+                allIsValid = false;
+            }
+            if (document.getElementById('q3').value > 7) {
+                document.getElementById('q3_error').innerHTML = 'A WEEK!';
+                allIsValid = false;
+
+            }
+            if (document.getElementById('q3').value < 0) {
+                document.getElementById('q3_error').innerHTML = 'No way you are that chill , enter at least 0!';
+                allIsValid = false;
+            }
+            if (!document.getElementById('q4_op1').checked && !document.getElementById('q4_op2').checked && !document.getElementById('q4_op3').checked && !document.getElementById('q4_op4').checked) {
+                document.getElementById('q4_error').innerHTML = 'Please select at least one option';
+                allIsValid = false;
+            }
+            if (document.getElementById('q5').value == '') {
+                document.getElementById('q5_error').innerHTML = 'Please enter a number';
+                allIsValid = false;
+            }
+            if (document.getElementById('q5').value < 0 || document.getElementById('q5').value > 10) {
+                document.getElementById('q5_error').innerHTML = 'Number must be between 0-10!';
+                allIsValid = false;
+            }
+            if (document.getElementById('q6').value == '') {
+                document.getElementById('q6_error').innerHTML = 'YELL!';
+                allIsValid = false;
+            }
+
+            return allIsValid;
+
+
+
+        }
+
+        function Analyse() {
+
+            document.getElementById('report').value = '';
+            if (validateInput()) {
+
+                let communication = 0;
+                let anger = 0;
+                let stress = 0;
+                let happiness = 0;
+                let communication_report = '';
+                let anger_report = '';
+                let stress_report = '';
+                let happiness_report = '';
+                let recommendation = 'Our Advice:\n'
+
+                let q1_yes = document.getElementById('q1_yes').checked;
+                let q1_no = document.getElementById('q1_no').checked;
+
+                let q2 = document.getElementById('q2');
+                let q3 = document.getElementById('q3').value;
+                let q4_op1 = document.getElementById('q4_op1');
+                let q4_op2 = document.getElementById('q4_op2');
+                let q4_op3 = document.getElementById('q4_op3');
+                let q4_op4 = document.getElementById('q4_op4');
+
+                let q5 = document.getElementById('q5').value;
+                let q6 = document.getElementById('q6').value;
+
+
+
+                if (q1_yes) {
+                    communication++;
+
+                }
+                console.log(communication);
+
+                if (q2.value == 'never') {
+                    communication++;
+
+
+                } else if (q2.value == 'rarely') {
+                    communication++;
+
+                    anger++;
+                }
+                else {
+                    anger += 2;
+                }
+                if (q3 > 2) {
+                    stress += q3;
+                }
+                if (q4_op2.checked) {
+                    communication++;
+
+                }
+                if (q4_op3.checked) {
+                    stress++;
+                }
+                if (q4_op4.checked) {
+                    anger += 3;
+                }
+                if (q5 > 5) {
+                    happiness++;
+                }
+                if (q6.length > 50) {
+                    anger++;
+                }
+
+                /*
+                max communication points=3
+                max anger =4
+  max stress =8
+  happiness=1
+
+                */
+
+
+
+
+
+                if (communication < 2) {
+                    communication_report = 'bad communication skills';
+                    recommendation += 'Attend social clubs, asking your friends and family for help is the first step for better commuinication. ';
+                }
+                else if (communication == 2) {
+                    communication_report = 'medium communication skills'
+                    recommendation += 'Enteract more often with people, try to understand and commuinicate with them. ';
+
+                }
+                else {
+                    communication_report = 'good communication skills';
+
+                }
+
+                if (anger < 2) {
+                    anger_report = 'moderate anger levels'
+
+                }
+                else {
+                    anger_report = 'high anger levels'
+                    recommendation += 'Take a deep breath and think twice before reacting. Joining Anger control clubs can help you alot. '
+
+                }
+
+                if (stress < 2) {
+                    stress_report = 'moderate stress'
+
+                } else {
+                    stress_report = 'high stress levels'
+                    recommendation += "Stress is one of our survival instincts, so the best way to deal with it is by thinking deeply about your situation, most of the time its not as life threatening as you might think. ";
+                }
+                if (happiness < 1) {
+                    happiness_report = 'Unhappy'
+                    recommendation += 'Consult with a therapist if you have been feeling unhappy for a long time.'
+                } else {
+                    happiness_report = 'Happy :)'
+                }
+
+
+
+                if (communication > 2 && anger < 2 && stress < 2 && happiness == 1) {
+                    recommendation += 'Your mental health and social skills seem to be on good track, Good Job!';
+                }
+
+
+                document.getElementById('report').value = 'Your Report Indicates:\n' + 'Communication Skills: ' + communication_report + '\n' + 'Anger Level: ' + anger_report + '\n' + 'Stress Level: ' + stress_report + '\n' + 'Happiness: ' + happiness_report + '\n' + recommendation;
+
+
+
+
+
+            }
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+        function setDate() {
+            document.getElementById('Date_time').innerHTML = GetDateAndTime()
+        }
+
+
+        function GetDateAndTime() {
+            let date = new Date();
+            let day = date.getDay();
+            let date2 = date.getDate();
+            let month = date.getMonth();
+            let year = date.getFullYear();
+            let hour = (date.getHours() % 12 < 10) ? String('0' + date.getHours() % 12) : (date.getHours() % 12);
+            let min = (date.getMinutes() < 10) ? String('0' + date.getMinutes()) : (date.getMinutes());
+
+
+            let writtenDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+            let writtenMonths = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+
+            return String(writtenDays[day] + " " + date2 + " " + writtenMonths[month] + ' ' + year + " " + hour + ":" + min);
+
+
+        }
+
+        setDate();
+
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

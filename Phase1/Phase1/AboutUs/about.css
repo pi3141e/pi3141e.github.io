@@ -1,0 +1,68 @@
+/*-----------------------------------------------------------------------*/
+
+.idCard img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+
+
+
+.idCard {
+    text-align: center;
+    padding: 25px;
+    height: 650px;
+    margin: 50px;
+    background-color: #e5bfbc;
+    width: 80%;
+    font-size: 20px;
+    border-radius: 15px;
+    color: #190200;
+}
+
+.idCard span {
+    text-align: left;
+}
+
+h1 {
+
+    padding: 15px;
+    background-color: #de9991;
+    margin: 0px;
+    color: #350602;
+    text-align: center;
+}
+
+.idCard:hover {
+    border-bottom: solid rgb(184, 57, 57) 5px;
+
+}
+
+.idCard span p {
+    width: 200px;
+}
+
+#goals ul p {
+    font-size: 20px;
+    text-align: justify center;
+
+}
+
+#goals {
+    background-color: #f2e9d7;
+
+    padding: 50px;
+
+    color: #350602;
+
+}
+
+#link:hover {
+    color: brown;
+}
+
+#link {
+
+
+    color: rgb(225, 142, 123);
+}

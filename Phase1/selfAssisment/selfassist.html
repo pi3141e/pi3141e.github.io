@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assist.css">
+    <link rel="stylesheet" href="../Navbar/navStyle.css">
+    <style>
+        span {
+            color: red;
+            font-size: small;
+            text-align: left;
+        }
+
+        .card {
+            border: none;
+            background-color: transparent;
+        }
+
+        textarea {
+            width: 70%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+        }
+
+        #answersheet {
+            background-color: rgb(247, 229, 169);
+            padding: 25px;
+        }
+
+        #h2foranswers {
+            background-color: rgb(244, 211, 101);
+            padding: 25px;
+            margin-bottom: 0px;
+        }
+
+        #answersheet ul {
+            background-color: rgba(236, 195, 134, 0.719);
+            padding: 25px;
+            border-radius: 5px;
+        }
+
+        #answersheet h4 {
+            color: rgb(121, 16, 16);
+            font-size: 20px;
+        }
+
+        #pink {
+            background-color: rgba(236, 168, 151, 0.563);
+            padding: 25px;
+            margin-top: 4px;
+            border-radius: 10px;
+
+
+        }
+
+
+        #orange {
+            background-color: rgba(236, 199, 134, 0.563);
+            padding: 25px;
+            margin-top: 4px;
+            border-radius: 10px;
+
+
+        }
+
+        #orange:hover {
+            border-bottom: solid brown 4px;
+            background-color: rgba(236, 199, 134, 0.772);
+            margin-top: 0px;
+        }
+
+
+
+
+
+        #pink:hover {
+            border-bottom: solid brown 4px;
+            background-color: rgba(236, 168, 151, 0.679);
+            margin-top: 0px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <strong class="navbar-brand">Learn</strong>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../SuccessStories/stories.html">Success Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../learning/learning.html">Learning Hub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="selected" href="../selfAssisment/selfassist.html">Self Self-Assessment &amp;
+                        Growth
+                        Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../WorkshopEvents/workshop and events copy2.htm">Workshop &amp;
+                        Events</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../AboutUs/About.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ContactUs/contact us.htm">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../Phase2/recommendations.html">Get Advised</a>
+
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+
+
+    <div>
+
+        <h1 id="title">A Short Assessment</h1>
+
+        <form class="container" style="width: 60%;  text-align: center;">
+
+
+            <fieldset style="border: none;">
+
+                <div class="qBox row">
+
+
+                    <h3>Question 1:Why are emotional intelligence and communication skills so important?</h3>
+
+
+                    <textarea style="border: none; border-radius: 5px; padding: 5px;"
+                        placeholder="write your answer here..." name="" id="q1"></textarea>
+                    <span id="q1E"></span>
+
+                </div>
+
+                <div class="qBox row">
+
+                    <h3>Question 2:Which of the following is an Advantage of EQ?</h3>
+
+                    <div class="opCont">
+                        <input type="radio" value="correct" name="q2" id="op1"> <label for="op1">
+                            Enables clearer, more empathetic communication
+                        </label>
+                        <br>
+
+
+
+                        <input type="radio" name="q2" value="incorrect" id="op2"><label for="op2">
+                            Encourages you to yell at your employees
+                        </label>
+
+                        <br>
+
+                        <input type="radio" name="q2" value="incorrect" id="op3"><label for="op3">
+                            Makes it easy to manipulate others
+                        </label>
+                        <br>
+                        <span id="q2E"></span>
+
+                    </div>
+
+                </div>
+                <div class="qBox row">
+                    <h3>Question 3:EQ is only important for work spaces.</h3>
+                    <div class="opCont">
+                        <input type="radio" name="q3" id="o1"><label for="o1">True</label>
+                        <br>
+                        <input type="radio" name="q3" id="o2"><label for="o2">False</label>
+                        <br>
+                        <span id="q3E"></span>
+                    </div>
+                </div>
+                <div class="qBox row">
+
+                    <h3>Question 4:What are key tricks into developing EQ?(pick 3)</h3>
+                    <div class="opCont">
+                        <input type="checkbox" name="q4" id="o-1"><label for="o-1">Develop your ability to operate
+                            under
+                            stress.</label>
+                        <br>
+                        <input type="checkbox" name="q4" id="o-2"><label for="o-2">Show empathy.</label>
+                        <br>
+                        <input type="checkbox" name="q4" id="o-3"><label for="o-3">Have no mercy.</label>
+                        <br>
+                        <input type="checkbox" name="q4" id="o-4"><label for="o-4">Quit your job.</label>
+                        <br>
+                        <input type="checkbox" name="q4" id="o-5"><label for="o-5">Don't be ashamed of
+                            vulnerability.</label>
+                        <br>
+                        <input type="checkbox" name="q4" id="o-6"><label for="o-6">Isolation from mankind.</label>
+                        <br>
+                        <span id="q4E"></span>
+                    </div>
+                </div>
+
+
+
+
+                <div class="qBox row">
+
+
+                    <h3>Question 5:Leaders showing vulnerability caused their employees to trust them. </h3>
+                    <div class="opCont">
+                        <input type="radio" name="q5" id="oo1"><label for="oo1">True</label>
+                        <br>
+                        <input type="radio" name="q5" id="oo2"><label for="oo2">False</label>
+                        <br>
+                        <span id="q5E"></span>
+                    </div>
+                </div>
+
+
+            </fieldset>
+
+
+
+        </form>
+
+        <div style="text-align: center;">
+            <button class="btn" onclick="CalculateAndDisplayResults()" value="Submit Answers">Submit Answers</button>
+            <h3 id="results"></h3>
+        </div>
+        <br><br><br><br><br>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <h2 id="h2foranswers" style="font-size: 30px;">Answer Sheet</h2>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="answersheet">
+            <div class="row">
+                <h3 style="font-size: 30px;">Each question answered correctly grants you 1 point.</h3>
+                <p>*Don't Cheat*</p>
+
+
+                <h4>Question 1:Why are emotional intelligence and communication skills so important?
+                </h4>
+                <p style="background-color: rgba(236, 195, 134, 0.719); padding: 25px; border-radius: 5px;">Because
+                    emotional
+                    intelligence
+                    enables clearer, more empathetic
+                    communication.
+                </p>
+
+                <h4>Question 2:Which of the following is an Advantage of EQ?</h4>
+                <ul>
+                    <li>Enables clearer, more empathetic communication</li>
+
+                </ul>
+
+                <h4>Question 3:EQ is only important for work spaces.</h4>
+                <ul>
+                    <li style="color: red;">False</li>
+
+                </ul>
+
+
+                <h4>Question 4:What are key tricks into developing EQ?</h4>
+                <ul style="list-style-type: square;">
+                    <li>Develop your ability to operate under stress.</li>
+                    <li>Show empathy.</li>
+                    <li>Don't be ashamed of vulnerability.</li>
+                </ul>
+
+                <h4>Question 5:Leaders showing vulnerability caused their employees to trust them.</h4>
+                <ul>
+                    <li style="color: rgb(71, 164, 71);">True</li>
+
+                </ul>
+
+
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <h2
+                    style="text-align: center; color: rgb(100, 12, 12); background-color: rgba(240, 228, 210, 0.762); margin: 0px; padding: 35px; ">
+                    If you
+                    scored less than 3 points,
+                    then you need some serious help...
+                    Luckily, you are in safe hands!
+                    We will provide you with Growth Tools that will help you fill that gap.
+                </h2>
+
+
+            </div>
+        </div>
+        <br><br>
+        <div class="container">
+            <ul>
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <li style="list-style-type: none; " id="pink">
+                                <h3 style="font-size: 30px;" class="card-title">How We Feel App</h3>
+                                <p class="card-text">This App is a daily tracker of your emotions, that takes your
+                                    enteries, analysis them
+                                    and
+                                    provides
+                                    advices to help you communicate with emotional intelligence. </p>
+                                <br><br>
+                                <a class="btn" href="https://howwefeel.org/">Get The App</a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <li style="list-style-type: none; " id="orange">
+                                <h3 class="card-title" style="font-size: 30px;">A More Detailed Communication Skills
+                                    Course</h3>
+                                <p class="card-text">Coursera is a well known platform that provides courses on
+                                    different topics,
+                                    Including
+                                    Communication
+                                    Skills!
+                                </p>
+                                <br><br>
+                                <a class="btn" href="https://www.coursera.org/articles/communication-skills">
+                                    Check it out
+                                </a>
+
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+    <br>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+    <script src="assist.js"></script>
+</body>
+
+</html>
